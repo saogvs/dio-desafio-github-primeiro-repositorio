@@ -1,0 +1,34 @@
+-------------linhas de comando------------------
+função 			windows 	linux
+abrir pasta		cd		cd
+voltar pasta		cd..		cd ..
+ver o q tem dentro	dir		ls
+criar pasta		mkdir		mkdir
+deletar pasta		del/rmdir	-rm -rf
+limpar tela		cls		clear
+limpar tela				ctrl+l
+mostrar caminho				pwd
+ver pastas ocultas			ls -a		
+-----------como criar uma chave sha1---------------
+openssl sha1 texto.txt
+--------comandos git-------------------------
+ssh-keygen -t ed25519 -C saogvs@homail.com	*cria chave publica para usuario
+cat id_ed25519.pub				*pega o arquivo pra fazer algo
+eval $(ssh-agent -s)				*exibr a chave publica (copiar)
+ssh-add id_ed25519				*cria chave particular
+
+git init			*iniciar git
+git add nomedoarquivo.ext	*adicionar os arquivos para staged: 
+git add * ou git add .		*adiciona tudo de uma vez para staged
+git commit -m "comentario"	*adicinar comentarios a uma etapa de modificação: 
+git status			*ver o estado dos arquivos
+mv nomedoarquivo.ext ./pasta/	*mover um arquivo pra alguma pasta: 
+git config --global		*inserir informações na conta do git
+git config --global --unset	*apagar informações na conta do git
+git config --global user.email	*insere email na conta do git
+git config --global user.nome	*insere nome na conta do git
+git remote add origin https...	*adiciona o servidor remoto
+q				*interrompe um processo
+git push origin master		*envia os arquivos para o servidor
+git clone https...		*clona um projeto para o computador
+git remote -v			*mostra o link do repositorio do projeto
